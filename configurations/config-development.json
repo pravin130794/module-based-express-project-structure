@@ -1,0 +1,36 @@
+﻿{
+	"cluster": {
+		"workerCount": 5
+	},
+	"server": {
+		"bodyParser": {
+			"limit": "20000kb"
+		}
+	},
+	"mysql": {
+		"host": "localhost",
+		"port": 3306,
+		"username": "root",
+		"password": "root",
+		"database": "test",
+		"dialect": "mysql",
+		"connectTimeout": 60000,
+		"pool": {
+			"max": 5,
+			"min": 0,
+			"acquire": 1200000,
+			"idle": 10000
+		},
+		"dialectOptions": {
+			"multipleStatements": true
+		},
+		"logging": false
+	},
+	"aws": {
+		"s3": {
+			"BUCKET_NAME": "",
+			"STORAGE_ENV": "",
+			"BASE_URL": ""
+		}
+	} 
+}
